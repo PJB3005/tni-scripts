@@ -4,7 +4,7 @@ import argparse
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    subparsers = parser.add_subparsers();
+    subparsers = parser.add_subparsers()
 
     parser_switch = subparsers.add_parser("switch")
     parser_switch.set_defaults(func=cmd_switch)
